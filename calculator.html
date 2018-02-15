@@ -15,6 +15,14 @@
 			num.value = Math.pow(num.value, numCalc);
 		}
 
+	};
+
+	function seno() {
+
+	var num = document.getElementById("n1");
+
+	num.value = Math.sin(num.value);
+
 	}
 	
 
@@ -26,8 +34,9 @@
 	<h1>Calculadora de Sergio Antonio Trujillo</h1>
 	Number:
 
-	<input type="text" id="n1"><p>
+	<input type="text" id="n1" placeholder="0" style="text-align: right;"><p>
 
+	<button onclick="seno()"> sin(x) </button>
 	<button onclick="cube(3)"> x^3 </button>
 	<button onclick="cube(4)"> x^4 </button>
 	<button onclick="cube(0)"> CLEAR </button>
